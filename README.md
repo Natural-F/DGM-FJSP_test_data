@@ -1,11 +1,15 @@
 Data Description
 
 Line 1:
+
 Meaning: Number of machines M_num
+
 Type: int
 
 Line 2:
+
 Meaning: Total number of workpieces J_num
+
 Type: int
 
 Line 3:
