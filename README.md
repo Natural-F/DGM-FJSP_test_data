@@ -13,40 +13,61 @@ Meaning: Total number of workpieces J_num
 Type: int
 
 Line 3:
+
 Meaning: List of length J_num, each element represents the arrival time of the corresponding workpiece.
+
 Type: list[int]
 
 Line 4
+
 Processing_time
+
 Meaning: Processing time information. The length of the outer list is equal to J_num; for each workpiece, it is nested layer by layer according to the process.
+
 Each process corresponds to a list of length M_num (if the process can be processed on a certain machine, a positive integer time is stored; if not, -1 is stored).
+
 Type: list[list[list[int]]]
 
 Structure diagram:
+
 Processing_time[job_i] # The i-th workpiece
 → [op_1, op_2, ..., op_opNum_i] # List of each operation (op)
 → op_k = [t_0, t_1, ..., t_(M_num-1)] # -1 when not processable
 
 Line 5:
+
 Op_num
+
 Meaning: List, length J_num, each element is the number of operations (Operation Number) contained in the corresponding workpiece.
+
 Type: list[int]
 
 Line 6:
+
 Meaning: Mapping relationship between workpiece number and its operation number. The key is the workpiece index (starting from 0), and the value is the operation number of the workpiece.
+
 Type: dict[int, int]
 
 Line 7:
+
 Power_active
+
 Meaning: Processing power information corresponding to the Processing_time structure.
+
 It also consists of three layers of "workpiece → process → machine". When processing is not possible, -1 is stored.
+
 Type: list[list[list[int]]]
-The structure is the same as Processing_time, but it stores power values ​​(random integers from 20 to 100).
+
+The structure is the same as Processing_time, but it stores power values.
 
 Line 8:
+
 Power_idle
-Meaning: Idle power list, indicating the power consumption of each machine when idle. (Hard-coded as 10 in the code)
+
+Meaning: Idle power list, indicating the power consumption of each machine when idle.
+
 Type: list[int]
+
 Length: M_num
 
 <!--
@@ -89,12 +110,12 @@ Power_active
 含义：与 Processing_time 结构对应的加工功率信息。
 同样由“工件 → 工序 → 机器”三层嵌套组成。不可加工时存 -1。
 类型：list[list[list[int]]]
-结构与 Processing_time 相同、但存储功率值(20～100 的随机整数)。
+结构与 Processing_time 相同、但存储功率值。
 
 
 第 8 行：
 Power_idle
-含义：空闲功率列表，表示各机器处于空闲时的功率消耗。(在代码里写死为 10)
+含义：空闲功率列表，表示各机器处于空闲时的功率消耗。
 类型：list[int]
 长度：M_num
 -->
