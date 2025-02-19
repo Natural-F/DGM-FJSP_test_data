@@ -1,5 +1,5 @@
 Different file naming：
-According to the combination of (E_ave, machine, job_insert), the folder is saved in the directory in the form of "M{machine}_E{E_ave}_I{job_insert}" and the data is written to "data.txt".
+According to the combination of (E_ave, machine, job_insert), the folder is saved in the directory in the form of "E{E_ave}_M{machine}_I{job_insert}" and the data is written to "data.txt".
 
 Data Description：
 
