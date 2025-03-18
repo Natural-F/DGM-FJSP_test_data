@@ -1,21 +1,24 @@
 Different file naming：
-According to the combination of ($E_{ave}$, machine, $job_{insert}$), the folder is saved in the directory in the form of "E{E_ave}_M{machine}_I{job_insert}" and the data is written to "data.txt".
+According to the combination of ($E_{ave}$, $machine$, $job_{insert}$), the folder is saved in the directory in the form of "E{$E_{ave}$}_M{$machine$}_I{$job_{insert}$}" and the data is written to "data.txt".
 
 Data Description：
 
 Line 1:
+Name:M_{num}
 
-Meaning: Number of machines M_{num}
+Meaning: Number of machines 
 
 Type: int
 
 Line 2:
+Name:J_num
 
-Meaning: Total number of workpieces J_num
+Meaning: Total number of workpieces
 
 Type: int
 
 Line 3:
+Name:Arrival
 
 Meaning: List of length J_num, each element represents the arrival time of the corresponding workpiece.
 
@@ -23,7 +26,7 @@ Type: list[int]
 
 Line 4
 
-Processing_time
+Name:Processing_time
 
 Meaning: Processing time information. The length of the outer list is equal to J_num; for each workpiece, it is nested layer by layer according to the process.
 
@@ -39,13 +42,14 @@ Processing_time[job_i] # The i-th workpiece
 
 Line 5:
 
-Op_num
+Name:Op_num
 
 Meaning: List, length J_num, each element is the number of operations (Operation Number) contained in the corresponding workpiece.
 
 Type: list[int]
 
 Line 6:
+Name:J
 
 Meaning: Mapping relationship between workpiece number and its operation number. The key is the workpiece index (starting from 0), and the value is the operation number of the workpiece.
 
@@ -53,7 +57,7 @@ Type: dict[int, int]
 
 Line 7:
 
-Power_active
+Name:Power_active
 
 Meaning: Processing power information corresponding to the Processing_time structure.
 
@@ -65,7 +69,7 @@ The structure is the same as Processing_time, but it stores power values.
 
 Line 8:
 
-Power_idle
+Name:Power_idle
 
 Meaning: Idle power list, indicating the power consumption of each machine when idle.
 
