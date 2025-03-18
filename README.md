@@ -4,13 +4,15 @@ According to the combination of ($E_{ave}$, $machine$, $job_{insert}$), the fold
 Data Description：
 
 Line 1:
-Name:M_{num}
+
+Name:M_num
 
 Meaning: Number of machines 
 
 Type: int
 
 Line 2:
+
 Name:J_num
 
 Meaning: Total number of workpieces
@@ -18,6 +20,7 @@ Meaning: Total number of workpieces
 Type: int
 
 Line 3:
+
 Name:Arrival
 
 Meaning: List of length J_num, each element represents the arrival time of the corresponding workpiece.
