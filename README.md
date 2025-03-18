@@ -1,11 +1,11 @@
 Different file naming：
-According to the combination of ($E_ave$, machine, $job_insert$), the folder is saved in the directory in the form of "E{E_ave}_M{machine}_I{job_insert}" and the data is written to "data.txt".
+According to the combination of ($E_{ave}$, machine, $job_{insert}$), the folder is saved in the directory in the form of "E{E_ave}_M{machine}_I{job_insert}" and the data is written to "data.txt".
 
 Data Description：
 
 Line 1:
 
-Meaning: Number of machines M_num
+Meaning: Number of machines M_{num}
 
 Type: int
 
