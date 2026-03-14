@@ -1,3 +1,5 @@
+Fan C, Tian J. Dynamic green multi-objective scheduling for flexible job shop by deep reinforcement learning[J]. Computers & Industrial Engineering, 2025: 111530.
+
 Different file naming：
 According to the combination of ($E_{ave}$, $machine$, $job_{insert}$), the folder is saved in the directory in the form of "E{$E_{ave}$}_M{$machine$}__I{$job_{insert}$}" and the data is written to "data.txt".
 
